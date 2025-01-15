@@ -1,11 +1,6 @@
 #include <stdio.h>
-
+#define MAIN() int main(void){FILE *dest_file=fopen("Grace_kid.c", "w");char code[] = "#include <stdio.h>%c#define MAIN() int main(void){FILE *dest_file=fopen(%cGrace_kid.c%c, %cw%c);char code[] = %c%s%c;if(dest_file == NULL){return(1);}fprintf(dest_file, code, 10, 34, 34, 34, 34, 34, code, 34, 10, 10, 10, 10);fclose(dest_file);return(0);}%cMAIN()%c/*%c	aaaargh%c*/";if(dest_file == NULL){return(1);}fprintf(dest_file, code, 10, 34, 34, 34, 34, 34, code, 34, 10, 10, 10, 10);fclose(dest_file);return(0);}
+MAIN()
 /*
-    aaargh
+	aaaargh
 */
-
-#define NAME "Grace_kid.c"
-#define SELF "#include <stdio.h>%c%c/*%c%caaargh%c*/%c%c#define NAME %cGrace_kid.c%c%c#define SELF %c%s%c%c#define START(c)int main() {FILE *fptr;fptr = fopen(c, %cw%c);if(fptr != NULL){fprintf(fptr,SELF,10,10,32,32,32,32,10,10,34,34,10,34,SELF,34,10,34,34,10,10);fclose(fptr);}return(0);}%c%cSTART(NAME)"
-#define START(c)int main() {FILE *fptr;fptr = fopen(c, "w");if(fptr != NULL){fprintf(fptr,SELF,10,10,10,9,10,10,10,34,34,10,34,SELF,34,10,34,34,10,10);fclose(fptr);}return(0);}
-
-START(NAME)
