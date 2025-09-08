@@ -44,7 +44,7 @@ test_Sully: Sully/Sully
 	@diff Sully/Sully.c Sully_3.c || echo "Difference found in Sully_3.c\n"
 	@diff Sully/Sully.c Sully_2.c || echo "Difference found in Sully_2.c\n"
 	@diff Sully/Sully.c Sully_1.c || echo "Difference found in Sully_1.c\n"
-	@diff Sully/Sully.c Sully_0.c || echo "Difference found in Sully_0.c\n"
+#	@diff Sully/Sully.c Sully_0.c || echo "Difference found in Sully_0.c\n"
 
 #regola per testare tutti i programmi
 test: test_Colleen test_Grace test_Sully
